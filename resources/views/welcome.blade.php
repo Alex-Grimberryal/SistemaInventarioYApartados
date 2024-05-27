@@ -9,7 +9,7 @@
     <x-sidebar></x-sidebar>
 
     <div class="content">
-        a
+        aaver p causa
     </div>
 </body>
 </html>
