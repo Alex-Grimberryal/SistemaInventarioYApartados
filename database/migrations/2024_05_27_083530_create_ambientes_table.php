@@ -9,16 +9,16 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
-        Schema::create('ambientes', function (Blueprint $table) {
-            $table->increments('idAmbiente');
-            $table->string('ambiente', 30);
-            $table->string('pabellon', 20);
-            $table->string('piso', 15);
-            $table->timestamps();
-        });
-    }
+        public function up(): void
+        {
+            Schema::create('ambientes', function (Blueprint $table) {
+                $table->increments('idAmbiente');
+                $table->string('ambiente', 30);
+                $table->string('pabellon', 20);
+                $table->string('piso', 15);
+                $table->timestamps();
+            });
+        }
 
     /**
      * Reverse the migrations.
