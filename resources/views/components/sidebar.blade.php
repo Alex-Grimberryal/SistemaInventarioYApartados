@@ -1,89 +1,68 @@
-<nav class="nav">
-
-    <div class="nav__container">
-
-        <h1 class="nav__title">Sistema de Gestion de Recursos</h1>
-
-        <a href="#menu" class="nav__menu">
-            <img src="{{ asset('img/menu.svg') }}" class="nav__icon">
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <h1>Sistema de Gestion de Recursos</h1>
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <a href="#" class="nav__menu nav__menu--second">
-            <img src="{{ asset('img/close.svg') }}" class="nav__icon ">
-        </a>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sistema de Gestion de Recursos</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
 
-        <ul class="dropdown" id="menu">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
-            <li class="dropdown__list">
-                <a href="#" class="dropdown__link">
-                    <img src="{{ asset('img/house.svg') }}" class="dropdown__icon">
-                    <span class="dropdown__span">Inicio</span>
-                </a>
-            </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
 
-            <li class="dropdown__list">
-                <a href="#" class="dropdown__link">
-                    <img src="{{ asset('img/projects.svg') }}" class="dropdown__icon">
-                    <span class="dropdown__span">Projects</span>
-                    <img src="{{ asset('img/down.svg') }}" class="dropdown__arrow">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Reservaciones
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Nueva reservación</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ver reservaciones</a></li>
+                        </ul>
+                    </li>
 
-                    <input type="checkbox" class="dropdown__check">
-                </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Inventario
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Inventario general</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Articulos</a></li>
+                            <li><a class="dropdown-item" href="#">Ambientes</a></li>
+                            <li><a class="dropdown-item" href="#">Marcas y Categorias</a></li>
+                            <li><a class="dropdown-item" href="#">Usuarios</a></li>
+                            <li><a class="dropdown-item" href="#">Reportes</a></li>
+                        </ul>
+                    </li>
 
-                <div class="dropdown__content">
-
-                    <ul class="dropdown__sub">
-
-                        <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Project 1</a>
-                        </li>
-                        <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Project 2</a>
-                        </li>
-                        <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Project 3</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </li>
-
-            <li class="dropdown__list">
-                <a href="#" class="dropdown__link">
-                    <img src="{{ asset('img/email.svg') }}" class="dropdown__icon">
-                    <span class="dropdown__span">Contacto</span>
-                    <img src="{{ asset('img/down.svg') }}" class="dropdown__arrow">
-
-                    <input type="checkbox" class="dropdown__check">
-                </a>
-
-                <div class="dropdown__content">
-
-                    <ul class="dropdown__sub">
-
-                        <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Contact 1</a>
-                        </li>
-                        <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Contact 2</a>
-                        </li>
-
-
-                    </ul>
-
-                </div>
-            </li>
-
-            <li class="dropdown__list">
-                <a href="#" class="dropdown__link">
-                    <img src="{{ asset('img/help.svg') }}" class="dropdown__icon">
-                    <span class="dropdown__span">Ayuda</span>
-                </a>
-            </li>
-
-        </ul>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-100 sticky-bottom mx-3 my-3">
+                <button type="button" class="btn btn-outline-warning btn-lg" style="width: 93%;">Cerrar Sesión</button>
+            </div>
+        </div>
     </div>
-
 </nav>

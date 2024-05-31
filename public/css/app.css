@@ -10,14 +10,14 @@ body{
 
 /*Estilos del Sidebar*/
 
-.nav{
+.navegacion{
     background-color: #28303B;
 
     --img1: scale(1);
     --img2: scale(0);
 }
 
-.nav:has( .dropdown:target ){
+.navegacion:has( .dropdown:target ){
     --img1: scale(0);
     --img2: scale(1);
 
